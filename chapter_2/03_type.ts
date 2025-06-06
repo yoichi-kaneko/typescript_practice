@@ -16,7 +16,7 @@ const infinity: number = 1 / 0; // Infinityを生成。number型
 const negativeInfinity: number = -1 / 0; // -Infinityを生成。number型
 
 // bigint型
-// bigNumerのコンパイルを通すため、コマンドで `--target ES2020` を指定する必要があります。
+// bigNumberのコンパイルを通すため、コマンドで `--target ES2020` を指定する必要があります。
 const bigNumber: bigint = 900719921459n; // bigint型の数値。es2020でサポート
 // `--target ES2020` を指定してもエラーになります
 const invalidBigNumber: number = 900719921459n; // number型に代入しようとするとエラー
@@ -28,3 +28,18 @@ const isComplete: boolean = false; // 真偽値型
 const emptyString: boolean = ""; // 空文字列を代入しようとするとエラー
 const zero: boolean = 0; // 数値の0を代入しようとするとエラー
 const undefinedValue: boolean = undefined; // undefinedを代入しようとするとエラー。strictnullチェックが無効の場合エラーにならない
+
+const id: string = '';
+const hasId1: boolean = Boolean(id); // Booleanコンストラクタを使用して真偽値に変換。空文字列はfalseに変換される
+const hasId2: boolean = !!id; // 真偽値に変換。空文字列はfalseに変換される
+
+// array型
+const list1: number[] = [1, 2, 3]; // 配列型
+lish1.push('text'); // ここで型エラーが発生します。number型の配列に文字列を追加しようとしています
+
+const list2: Array<number> = [1, 2, 3]; // ジェネリック型を使用した配列型
+
+// undefined, null型
+const undefinedVal: undefined = undefined; // undefined型
+const nullValue: null = null; // null型
+
