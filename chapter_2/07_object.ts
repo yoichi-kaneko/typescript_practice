@@ -2,7 +2,7 @@
 
 // TypeScriptの標準で定義されているobject型
 // object型は、プリミティブ型以外のすべての値を表し、エラーとならない
-const ojb1 = {
+const obj1 = {
     name: "Alice",
     age: 30,
 }
@@ -24,7 +24,7 @@ const newObj1: {
     age: 25,
 }
 
-console.log(newObj.height); // heightプロパティは定義されていないため、エラーになる
+console.log(newObj1.height); // heightプロパティは定義されていないため、エラーになる
 
 // heightプロパティがないためエラー
 const newObj2: {

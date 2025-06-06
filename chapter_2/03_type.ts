@@ -35,7 +35,7 @@ const hasId2: boolean = !!id; // 真偽値に変換。空文字列はfalseに変
 
 // array型
 const list1: number[] = [1, 2, 3]; // 配列型
-lish1.push('text'); // ここで型エラーが発生します。number型の配列に文字列を追加しようとしています
+list1.push('text'); // ここで型エラーが発生します。number型の配列に文字列を追加しようとしています
 
 const list2: Array<number> = [1, 2, 3]; // ジェネリック型を使用した配列型
 
